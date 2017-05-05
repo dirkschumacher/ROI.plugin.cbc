@@ -1,11 +1,20 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/dirkschumacher/ROI.plugin.cbc.svg?branch=master)](https://travis-ci.org/dirkschumacher/ROI.plugin.cbc) [![Coverage Status](https://codecov.io/gh/dirkschumacher/ROI.plugin.cbc/branch/master/graph/badge.svg)](https://codecov.io/gh/dirkschumacher/ROI.plugin.cbc)
+[![Travis-CI Build Status](https://travis-ci.org/dirkschumacher/ROI.plugin.cbc.svg?branch=master)](https://travis-ci.org/dirkschumacher/ROI.plugin.cbc) [![Coverage Status](https://codecov.io/gh/dirkschumacher/ROI.plugin.cbc/branch/master/graph/badge.svg)](https://codecov.io/gh/dirkschumacher/ROI.plugin.cbc) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ROI.plugin.cbc)](https://cran.r-project.org/package=ROI.plugin.cbc)
 
-ROI plugin for CBC
-==================
+ROI plugin for COIN-OR branch and cut (CBC) solver
+==================================================
 
-The package makes [rcbc](https://github.com/dirkschumacher/rcbc) available as a `ROI` plugin. This is work in progress, but somewhat usable.
+The package makes [rcbc](https://github.com/dirkschumacher/rcbc) available as a `ROI` plugin. This is work in progress, but already usable.
+
+Install
+-------
+
+First install [rcbc](https://github.com/dirkschumacher/rcbc), then:
+
+``` r
+devtools::install_github("dirkschumacher/ROI.plugin.cbc")
+```
 
 Contribution
 ------------

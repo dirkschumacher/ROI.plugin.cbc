@@ -13,11 +13,21 @@ knitr::opts_chunk$set(
 ```
 [![Travis-CI Build Status](https://travis-ci.org/dirkschumacher/ROI.plugin.cbc.svg?branch=master)](https://travis-ci.org/dirkschumacher/ROI.plugin.cbc)
 [![Coverage Status](https://codecov.io/gh/dirkschumacher/ROI.plugin.cbc/branch/master/graph/badge.svg)](https://codecov.io/gh/dirkschumacher/ROI.plugin.cbc)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ROI.plugin.cbc)](https://cran.r-project.org/package=ROI.plugin.cbc)
 
 # ROI plugin for COIN-OR branch and cut (CBC) solver
 
 The package makes [rcbc](https://github.com/dirkschumacher/rcbc) available as a `ROI` plugin.
 This is work in progress, but already usable. 
+
+## Install
+
+First install [rcbc](https://github.com/dirkschumacher/rcbc), then:
+
+```{r, eval=FALSE}
+devtools::install_github("dirkschumacher/ROI.plugin.cbc")
+```
+
 
 ## Contribution
 
