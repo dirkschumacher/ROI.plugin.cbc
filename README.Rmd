@@ -1,0 +1,26 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+[![Travis-CI Build Status](https://travis-ci.org/dirkschumacher/ROI.plugin.cbc.svg?branch=master)](https://travis-ci.org/dirkschumacher/ROI.plugin.cbc)
+[![Coverage Status](https://codecov.io/gh/dirkschumacher/ROI.plugin.cbc/branch/master/graph/badge.svg)](https://codecov.io/gh/dirkschumacher/ROI.plugin.cbc)
+
+# ROI plugin for COIN-OR branch and cut (CBC) solver
+
+The package makes [rcbc](https://github.com/dirkschumacher/rcbc) available as a `ROI` plugin.
+This is work in progress, but already usable. 
+
+## Contribution
+
+Feel free to open issues and send PRs.
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.

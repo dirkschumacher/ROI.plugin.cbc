@@ -1,0 +1,19 @@
+Package: ROI.plugin.cbc
+Title: ROI plugin for COIN CBC
+Version: 0.0.1.9000
+Authors@R: person("Dirk", "Schumacher", email = "mail@dirk-schumacher.net", role = c("aut", "cre"))
+Description: It does exactly what you think it does.
+Depends:
+    R (>= 3.3.2)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    ROI,
+    rcbc,
+    Matrix
+Suggests:
+    testthat,
+    covr
+Remotes: dirkschumacher/rcbc
+RoxygenNote: 6.0.1
