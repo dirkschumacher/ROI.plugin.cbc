@@ -87,6 +87,11 @@ solver <- function(x, control) {
     ROI::.ROI_plugin_register_solver_method(signatures = solver_signature,
                                         solver = solver_name,
                                         method = solver)
+
+    # threads
+    ROI::.ROI_plugin_register_solver_control(solver_name,
+                                             "threads",
+                                             "X")
     # from here
     # https://projects.coin-or.org/CoinBinary/export/1059/OptimizationSuite/
     # trunk/Installer/files/doc/cbcCommandLine.pdf
