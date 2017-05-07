@@ -44,7 +44,7 @@ solver <- function(x, control) {
   row_lb[row_dir == "<="] <- -Inf
 
   mat <- constraints$L
-  mat <- Matrix::sparseMatrix(mat$i, mat$j, x = mat$v)
+  mat <- Matrix::spMatrix(nrow(mat), ncol(mat), mat$i, mat$j, x = mat$v)
   result <- rcbc::cbc_solve(obj = obj,
                          mat = mat,
                          row_lb = row_lb,
