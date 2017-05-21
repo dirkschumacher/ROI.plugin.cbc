@@ -4,10 +4,12 @@ cache: packages
 matrix:
   include:
     - os: linux
+      r: release
       dist: trusty
       env: R_CODECOV=true
       sudo: required
     - os: osx
+      r: release
       osx_image: xcode8.3
       brew_packages: coin-or-tools/coinor/cbc
       latex: false
@@ -33,4 +35,4 @@ notifications:
     on_failure: change
 
 after_success:
-  - if [[ "${R_CODECOV}" ]]; then R -e 'covr::codecov()'; fi
+  - if [[ "${R_CODECOV}" ]]; then Rscript -e 'covr::codecov()'; fi
