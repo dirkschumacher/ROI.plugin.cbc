@@ -62,7 +62,8 @@ solver <- function(x, control) {
     "nodelimit" = 7L,
     "solutionlimit" = 8L,
     "abandoned" = 9L,
-    "iterationlimit" = 10L
+    "iterationlimit" = 10L,
+    "timelimit" = 11L
   )
   status_code <- status_codes[rcbc::solution_status(result)]
   ROI::ROI_plugin_canonicalize_solution(
@@ -243,6 +244,12 @@ solver <- function(x, control) {
                                       10L,
                                       "iterationlimit",
                                       "Iteration limit reached."
+    )
+    ROI::ROI_plugin_add_status_code_to_db(solver_name,
+                                      11L,
+                                      "timelimit",
+                                      "Time limit reached.",
+                                      0L
     )
   }
 }
