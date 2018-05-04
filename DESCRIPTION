@@ -4,7 +4,7 @@ Version: 0.1.0.9001
 Authors@R: person("Dirk", "Schumacher", email = "mail@dirk-schumacher.net", role = c("aut", "cre"))
 Description: It does exactly what you think it does.
 Depends:
-    R (>= 3.3.2)
+    R (>= 3.3)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
