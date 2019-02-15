@@ -16,4 +16,4 @@ Suggests:
     testthat,
     covr
 Remotes: dirkschumacher/rcbc
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
